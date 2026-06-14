@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Conditional Operator </title>
+    <link rel="stylesheet" href="Javaform.css">
+    <script>
+
+        function onClickSubmit() {
+            debugger;
+            document.getElementById("divForm").style.backgroundColor = "Red";
+        }
+    </script>
+</head>
+
+<body class="box">
+    <div  id="divForm" class="display">
+        <form>
+            <label id="lblAge">Age</label>
+            <input id="txtAge" type="number"><br>
+            <br>
+            <label id="lblGender">Gender</label>
+            <input id="txtGender" type="text"><br>
+            <br>
+            <button class="container" id="btnSubmit" onclick="onClickSubmit()">Submit</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
