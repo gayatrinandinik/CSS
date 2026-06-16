@@ -3,10 +3,17 @@
 <head>
     <link rel="stylesheet" href="DynamicClass.css">
     <script>
-        function onClickCSSChange() {
-            document.getElementById("divBlock").classList
+        function onClickCSSAdd() {
+            document.getElementById("divBlock").classList.add("div-boder");
 
         }
+        function  onClickRemove(){
+            document.getElementById("divBlock").classList.remove("div-boder");
+        }
+        function onClickToggle(){
+             document.getElementById("divBlock").classList.toggle("div-boder");
+        }
+
     </script>
 
 </head>
@@ -17,7 +24,9 @@
             Dynamic Class add
         </h1>
         <p id="pFunction">this function is to add css to div</p>
-        <button id="btnCSSChange" onclick="onClickCSSChange()">CSS Change</button>
+        <button id="btnCSSAdd" onclick="onClickCSSAdd()">CSS ADD</button>
+        <button id="btnCSSRemove" onclick="onClickRemove()">CSS Remove</button>
+        <button id="btnCSSToggle" onclick="onClickToggle()">CSS Toggle</button>
     </div>
 
 
