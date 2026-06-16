@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>project</title>
+        <script>
+            function onclicksubmit(){
+                debugger;
+                document.getElementById("divform").style.border="Dotted";
+                document.getElementById("divform").style.border="Red";
+                document.getElementById("divform").style.fontSize="30px";
+            }
+        </script>
+    </head>
+    <body>
+        <div id="divform">
+
+            <h1 id="h1Form">Form</h1><br>
+            <label id="lblName">Name</label>
+            <input id="txtName" type="text"><br>
+            <label id="lblPhoneNumber">Phone Number</label><br>
+            <input id="NumPhoneNumber" type="number"><br>
+            <br>
+            <button id="btnsubmit" onclick="onclicksubmit()">submit</button>
+        </div>
+
+    </body>
+</html>
